@@ -75,10 +75,11 @@ body {
 
 .summary__plan--wrap {
     display: flex;
-
+    background: var(--clr-neutral-very-pale-blue);
+    border-radius: 1rem;
     align-items: center;
     margin-top: 2em;
-    padding: 0 1em;
+    padding: 1em;
     width: 100%;
 }
 .plan__img {
