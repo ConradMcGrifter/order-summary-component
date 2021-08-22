@@ -47,6 +47,7 @@ body {
     background: white;
     box-shadow: 0 10px 10px 5px rgba(27, 27, 27, 0.068);
     border-radius: 1rem;
+    margin: 1.5em;
 }
 
 .card__img {
