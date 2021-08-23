@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
+@keyframes hover {
+    from {
+        transform: translateY(0%);
+        box-shadow: 0 10px 10px 5px rgba(27, 27, 27, 0.068);
+    }
+
+    25% {
+        transform: translateY(-2%);
+        box-shadow: 0 10px 15px 10px rgba(27, 27, 27, 0.089);
+    }
+
+    75% {
+        transform: translateY(2%);
+        box-shadow: 0 10px 10px 5px rgba(27, 27, 27, 0);
+    }
+
+    to {
+        transform: translateY(0%);
+        box-shadow: 0 10px 10px 5px rgba(27, 27, 27, 0.068);
+    }
+}
+
 :root {
     --clr-primary-pale-blue: hsl(225, 100%, 94%);
     --clr-primary-bright-blue: hsl(245, 75%, 52%);
@@ -58,7 +80,7 @@ body {
     box-shadow: 0 10px 10px 5px rgba(27, 27, 27, 0.068);
     border-radius: 1rem;
     margin: 1.5em;
-    animation: hover 10s infinite ease-in-out;
+    animation: hover 7s infinite ease-in-out;
 }
 
 .card:hover {
@@ -157,22 +179,4 @@ body {
 
 .summary__cancel:hover {
     color: black;
-}
-
-@keyframes hover {
-    from {
-        transform: translateY(0%);
-    }
-
-    25% {
-        transform: translateY(-3%);
-    }
-
-    75% {
-        transform: translateY(3%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
 }
